@@ -28,16 +28,16 @@ void Programa::run(){
 	do{
 		system("cls");
 		
-		cout<<"Univerdad nacional" 
-        "\nSede Regional Brunca" 
-        "\nProgamacion 1"
-        "\nKevin Arauz Jimenez"
-        "\nProfesor: Alejandro Flores Quesada" 
+		cout<<"" 
+        "\n" 
+        "\n"
+        "\n"
+        "\nProfesor: " 
         "\n\n"
 		<<endl;
 		 
-		cout<<"-----------------------Menú----------------------------------" 
-        "\n1.Añadir nueva categoria" 
+		cout<<"-----------------------MenÃº----------------------------------" 
+        "\n1.AÃ±adir nueva categoria" 
         "\t2.Agregar titulo"
         "\n3.Listar todas las categorias"
         "\t4.Listar todos los titulos por codigo de categoria"
@@ -45,7 +45,7 @@ void Programa::run(){
         "\n6.Salir"
 		<<endl;
 								
-		cout<<"Digite el numero de la opción que desea\n";
+		cout<<"Digite el numero de la opciÃ³n que desea\n";
 		cin>>res;
 		system("cls");
 		switch(res){
@@ -65,7 +65,7 @@ void Programa::run(){
 				nuevoNodo=new Nodo(new Categoria(cat,cod,des));
 				CO->agregar(nuevoNodo);
 				CO->guardar();
-				cout<<endl<<"Desea realizar otra acción? Digite S=Si o N=NO" <<endl;
+				cout<<endl<<"Desea realizar otra acciÃ³n? Digite S=Si o N=NO" <<endl;
 				cin>>r;					
 				break;
 				
@@ -85,15 +85,15 @@ void Programa::run(){
 						"Ejemplo: horas:minutos:segundo / 1:30:20\n";
 				cin>>duracion;
 				
-				cout<<"Digite el año de estreno\n"
-						"Ejemplo: Año / 2000 \n";
+				cout<<"Digite el aÃ±o de estreno\n"
+						"Ejemplo: AÃ±o / 2000 \n";
 				cin>>anyo;
 				
 				nodoTitulo=new NodoTitulo(new Titulos(cod2,titulo,actor,duracion,anyo));
 				CT->agregar(nodoTitulo);	
 				CT->guardar();
 				
-				cout<<endl<<"Desea realizar otra acción? Digite S=Si o N=NO" <<endl;
+				cout<<endl<<"Desea realizar otra acciÃ³n? Digite S=Si o N=NO" <<endl;
 				cin>>r;						
 				break;
 					
@@ -102,7 +102,7 @@ void Programa::run(){
 				CO->recuperar();
 				CO->imprimirLista();
 				
-				cout<<endl<<"Desea realizar otra acción? Digite S=Si o N=NO" <<endl;
+				cout<<endl<<"Desea realizar otra acciÃ³n? Digite S=Si o N=NO" <<endl;
 				cin>>r;						
 				break;
 				
@@ -114,7 +114,7 @@ void Programa::run(){
 				CT->buscar(cod2);
 				
 				
-				cout<<endl<<"Desea realizar otra acción? Digite S=Si o N=NO" <<endl;
+				cout<<endl<<"Desea realizar otra acciÃ³n? Digite S=Si o N=NO" <<endl;
 				cin>>r;						
 				break;
 				
@@ -125,7 +125,7 @@ void Programa::run(){
 				cin>>titulo2;
 				CT->buscarTitulo(titulo2);
 				
-				cout<<endl<<"Desea realizar otra acción? Digite S=Si o N=NO" <<endl;
+				cout<<endl<<"Desea realizar otra acciÃ³n? Digite S=Si o N=NO" <<endl;
 				cin>>r;	
 				break;
 				
